@@ -13,22 +13,6 @@
 	
 </script>
 
-
-<!-- <AppShell >
-	<svelte:fragment slot="header">
-		<AppBar background="none" gridColumns="grid-cols-1" slotDefault="place-self-center" slotTrail="place-content-end">
-			<div style="font-size: 70px; margin: 100px 0px;">
-				<h1 class="h1" style="margin-bottom:40px">Welcome to Find A Movie</h1>
-				<img src={logo} alt="Logo is a bucket of porcorn" style="width: 50%; margin-left: auto; margin-right: auto;" /> 
-			</div>
-		</AppBar>
-	</svelte:fragment>
-		<slot />
-	<svelte:fragment slot="footer" >
-		<p style="text-align: center;"> visit <a class="atag" href="https://github.com/IsaiahA21">https://github.com/IsaiahA21</a> and <a class="atag" href="www.linkedin.com/in/isaiah-a-2001">www.linkedin.com/in/isaiah-a-2001</a></p>
-	</svelte:fragment>
-</AppShell> -->
-
 <div class="app">
 	<header>
 		<h3 class="h3" style="margin:40px 0px; text-align: center;">Welcome to Find A Movie</h3>
@@ -40,7 +24,7 @@
 	</main>
 
 	<footer>
-		<p style="text-align: center;"> visit <a class="atag" href="https://github.com/IsaiahA21">https://github.com/IsaiahA21</a> and <a class="atag" href="www.linkedin.com/in/isaiah-a-2001">www.linkedin.com/in/isaiah-a-2001</a></p>
+		<p style="text-align: center;"> visit <a class="atag" href="https://github.com/IsaiahA21">github.com/IsaiahA21</a> and <a class="atag" href="https://www.linkedin.com/in/isaiah-a-2001">linkedin.com/in/isaiah-a-2001</a></p>
 	</footer>
 </div>
 
