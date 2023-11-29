@@ -4,7 +4,7 @@ import { error } from '@sveltejs/kit';
   if (params.slug) {
         const movieId = params.slug.split('$')[1]; //Get the movie ID from the slug
         let selectedMovie = null;
-        const API_Token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWM4NjBiZTZiNTVjYzQwZjQyNjM1NWFiZWMyODgwYiIsInN1YiI6IjY1NGU4ZDk5NDFhNTYxMzM2OTNkOGE5YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QLiPjR0mQ-PsowFeNcNMiRvhDQ8N-3PLZJnPXtCnKvA";
+        const API_Token = import.meta.env.VITE_API_TOKEN;
         const options = {
             method: 'GET',
             headers: {
