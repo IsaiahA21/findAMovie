@@ -4,6 +4,7 @@
   import { Engine, functionCreateDatatable, Pagination, RowsPerPage, Search, Sort } from 'svelte-datatables-net';
   import { onMount } from 'svelte';
 
+
   type movieObject = {
     id: number;
     title: string;
@@ -25,7 +26,7 @@
 		parSearchString: ''
 	});
 
-  let API_Token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWM4NjBiZTZiNTVjYzQwZjQyNjM1NWFiZWMyODgwYiIsInN1YiI6IjY1NGU4ZDk5NDFhNTYxMzM2OTNkOGE5YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QLiPjR0mQ-PsowFeNcNMiRvhDQ8N-3PLZJnPXtCnKvA";
+  let API_Token = import.meta.env.VITE_API_TOKEN;
   const options = {
   method: 'GET',
   headers: {

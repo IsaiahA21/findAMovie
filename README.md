@@ -1,3 +1,14 @@
+# Environment Variables
+To keep sensitive information like API keys secure, this project uses environment variables. Follow these steps to set up your environment variables:
+
+Create a new file named .env in the root of your project.
+
+Open the .env file and add the following line:
+VITE_API_KEY=your_actual_api_token
+<!-- Replace your_actual_api_token with your real API key. -->
+
+Save the .env file.
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
