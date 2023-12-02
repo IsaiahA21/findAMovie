@@ -18,7 +18,7 @@
         <p>{selectedMovie.overview}</p>
         <div class="line" style="margin: 1.5em 5em; border-top: 2px solid black;">
         </div>
-        <p><a style="text-decoration: underline; color: blue;" href={selectedMovie["homepage"]}>tailer</a></p>
+        <p><a style="text-decoration: underline; color: blue;" href={selectedMovie["homepage"]}>trailer</a></p>
         <p><span class="spanClass">Release date:  </span>{release_date}</p>
         <p><span class="spanClass">Genre(s):</span> {genres}</p>
         <p><span class="spanClass">Original language: </span> {langs}</p>
