@@ -28,6 +28,17 @@
     </div>
 </main>
 
+<section style="border-top: 1px black;border-style: solid;display: flex;color: black;margin-bottom: 3%;">
+    <div class="ratingClass">
+        <h1>Reviews</h1>
+    </div>
+    <div class="commentClass">
+        Comments
+        <button>New</button>
+    </div>
+</section>
+
+
 <style>
     .spanClass {
         font-weight: bold;
@@ -48,5 +59,16 @@
         margin: 2% 2%;
         margin-left: 0%;
         color: black;
+    }
+    .ratingClass{
+        width: 30%;
+        border: 1px solid black;
+        margin: 0% 2%;
+        text-align: center;
+    }
+    .commentClass{
+        width: 68%;
+        border: 1px solid black;
+        text-align: center;
     }
 </style>
