@@ -1,7 +1,7 @@
 <script lang="ts">
     //https://github.com/skeletonlabs/skeleton/blob/master/packages/skeleton/src/lib/components/Avatar/Avatar.svelte
     import { Avatar } from '@skeletonlabs/skeleton';
-    import { IconRenderer, Card, SvelteUIProvider, Flex } from '@svelteuidev/core';
+    import { IconRenderer, Card, SvelteUIProvider, Flex } from '@svelteuidev/core';//https://www.svelteui.org/core/breadcrumbs
     import * as allCommentTS  from './AllCommentsTS';
     import { Engine, functionCreateDatatable, Pagination, RowsPerPage, Search, Sort } from 'svelte-datatables-net';
 
