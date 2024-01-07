@@ -47,7 +47,7 @@ onMount(async () => {
     } else {
       // API request was successful, replace allMovies with the data
       allMovies = mapToObject(data.results as any[]);
-      console.log(allMovies);
+      // console.log(allMovies);
       isLoading = false;
       // Wait for allMovies to be populated before creating the datatable
        objectDataRow = functionCreateDatatable({
@@ -82,7 +82,7 @@ function mapToObject(data: any[]) : movieObject[]  {
 
 </script>
 {#if apiRequestError}
-<h1 style="color: red;text-align: center;">Invalid API key: You must be granted a valid key</h1>
+<h1 style="color: red;t`ex`t-align: center;">Invalid API key: You must be granted a valid key</h1>
 {:else}
 {#if isLoading}
   <h1 style="color: red;text-align: center;">Loading...</h1>

@@ -9,7 +9,22 @@
     // get the spoken languages
     let langs = selectedMovie.spoken_languages.map(((spoken: { name: string; }) => " " + spoken.name));
 
+    //https://www.radix-ui.com/icons
+    import { Plus } from 'radix-icons-svelte';
+
+    // import svelteUI
+    import { Button, Grid } from '@svelteuidev/core';
+
+    import AllComments from "./AllComments.svelte";
+    import { Breadcrumbs } from '@svelteuidev/core';
+
 </script>
+<div style="color: black;">
+<Breadcrumbs size="md" separator="→">
+    <Breadcrumbs.Item href="/">Home</Breadcrumbs.Item>
+    <Breadcrumbs.Item active={true}>{selectedMovie.title}</Breadcrumbs.Item>
+</Breadcrumbs>
+</div>
 <main style="display: flex;">
     <div class="imageBox" style={`background-image: url(https://image.tmdb.org/t/p/w500/${selectedMovie.backdrop_path});`}></div>
     <div class="detail">
@@ -33,8 +48,29 @@
         <h1>Reviews</h1>
     </div>
     <div class="commentClass">
-        Comments
-        <button>New</button>
+        <!-- <div class="commentHeader" style=" display: flex; align-items: center;">
+            <span style="margin-left: auto;">Comments</span> 
+            <button style="margin-left: auto;display: flex;text-align: center;align-items: center;" >
+               <!-- type="button" class="bg-black text-white font-bold py-2 px-4 " -->
+                <!-- onclick opens a modal  -->
+                <!-- <div class="icon">  <TiPlusOutline />            </div>
+                <span>New</span>
+            </button>
+        </div> -->
+        <Grid override={{color : "blue;", borderBottom:"1px solid black", marginBottom:"0.5%"}}>
+            <Grid.Col span={3} class="gridColumn" override={{color : "blue;", border:"1px solid black"}}>
+                <span >Comments</span> 
+            </Grid.Col>
+            <Grid.Col class="gridColumn" span={3} offset={6} override={{color : "blue;", border:"1px solid black"}}>
+                <Button fullSize variant='gradient' gradient={{from: 'grape', to: 'pink', deg: 35}} 
+                override={{'&:hover': {  boxShadow: '0 4px 20px #d14ab0',}}}>
+                    <span style="font-weight:bold;font-size: large;">New</span>
+                    <Plus size={25} slot="leftIcon"/>
+                </Button>
+            </Grid.Col>
+        </Grid>
+        <AllComments />
+
     </div>
 </section>
 
@@ -69,6 +105,10 @@
     .commentClass{
         width: 68%;
         border: 1px solid black;
-        text-align: center;
+        margin-right: 2%;
+    }
+    .gridColumn{
+        background-color: blue;
+        border: 1px solid black;
     }
 </style>

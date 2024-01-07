@@ -8,8 +8,6 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	import logo from '$lib/images/popcorn.png';
-	import { AppShell,AppBar } from '@skeletonlabs/skeleton';
-	import  git  from '$lib/images/github_icon.png';
 	
 </script>
 

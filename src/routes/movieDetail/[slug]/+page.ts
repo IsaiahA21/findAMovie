@@ -22,7 +22,7 @@ import { error } from '@sveltejs/kit';
                 } else {
                     // API request was successful, populate the selectedMovie object with the data
                     selectedMovie = data;
-                    console.log(data);
+                    // console.log(data);
                 }
             } catch (error) {
                 // Handle other errors
